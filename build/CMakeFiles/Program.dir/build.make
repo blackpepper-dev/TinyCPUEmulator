@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Programming/TinyCPUEmulator
+CMAKE_SOURCE_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Programming/TinyCPUEmulator/build
+CMAKE_BINARY_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Program.dir/depend.make
@@ -72,118 +72,115 @@ include CMakeFiles/Program.dir/flags.make
 CMakeFiles/Program.dir/codegen:
 .PHONY : CMakeFiles/Program.dir/codegen
 
-CMakeFiles/Program.dir/src/emu_cpu.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_cpu.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp
-CMakeFiles/Program.dir/src/emu_cpu.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Program.dir/src/emu_cpu.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_cpu.cpp.obj -MF CMakeFiles/Program.dir/src/emu_cpu.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_cpu.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp
+CMakeFiles/Program.dir/src/emu_cpu.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_cpu.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_cpu.cpp
+CMakeFiles/Program.dir/src/emu_cpu.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Program.dir/src/emu_cpu.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_cpu.cpp.o -MF CMakeFiles/Program.dir/src/emu_cpu.cpp.o.d -o CMakeFiles/Program.dir/src/emu_cpu.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_cpu.cpp"
 
 CMakeFiles/Program.dir/src/emu_cpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_cpu.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp > CMakeFiles/Program.dir/src/emu_cpu.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_cpu.cpp" > CMakeFiles/Program.dir/src/emu_cpu.cpp.i
 
 CMakeFiles/Program.dir/src/emu_cpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_cpu.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp -o CMakeFiles/Program.dir/src/emu_cpu.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_cpu.cpp" -o CMakeFiles/Program.dir/src/emu_cpu.cpp.s
 
-CMakeFiles/Program.dir/src/emu_decoder.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_decoder.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp
-CMakeFiles/Program.dir/src/emu_decoder.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Program.dir/src/emu_decoder.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_decoder.cpp.obj -MF CMakeFiles/Program.dir/src/emu_decoder.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_decoder.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp
+CMakeFiles/Program.dir/src/emu_decoder.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_decoder.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_decoder.cpp
+CMakeFiles/Program.dir/src/emu_decoder.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Program.dir/src/emu_decoder.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_decoder.cpp.o -MF CMakeFiles/Program.dir/src/emu_decoder.cpp.o.d -o CMakeFiles/Program.dir/src/emu_decoder.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_decoder.cpp"
 
 CMakeFiles/Program.dir/src/emu_decoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_decoder.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp > CMakeFiles/Program.dir/src/emu_decoder.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_decoder.cpp" > CMakeFiles/Program.dir/src/emu_decoder.cpp.i
 
 CMakeFiles/Program.dir/src/emu_decoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_decoder.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp -o CMakeFiles/Program.dir/src/emu_decoder.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_decoder.cpp" -o CMakeFiles/Program.dir/src/emu_decoder.cpp.s
 
-CMakeFiles/Program.dir/src/emu_disasm.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_disasm.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp
-CMakeFiles/Program.dir/src/emu_disasm.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Program.dir/src/emu_disasm.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_disasm.cpp.obj -MF CMakeFiles/Program.dir/src/emu_disasm.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_disasm.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp
+CMakeFiles/Program.dir/src/emu_disasm.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_disasm.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_disasm.cpp
+CMakeFiles/Program.dir/src/emu_disasm.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Program.dir/src/emu_disasm.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_disasm.cpp.o -MF CMakeFiles/Program.dir/src/emu_disasm.cpp.o.d -o CMakeFiles/Program.dir/src/emu_disasm.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_disasm.cpp"
 
 CMakeFiles/Program.dir/src/emu_disasm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_disasm.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp > CMakeFiles/Program.dir/src/emu_disasm.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_disasm.cpp" > CMakeFiles/Program.dir/src/emu_disasm.cpp.i
 
 CMakeFiles/Program.dir/src/emu_disasm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_disasm.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp -o CMakeFiles/Program.dir/src/emu_disasm.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_disasm.cpp" -o CMakeFiles/Program.dir/src/emu_disasm.cpp.s
 
-CMakeFiles/Program.dir/src/emu_main.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_main.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_main.cpp
-CMakeFiles/Program.dir/src/emu_main.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Program.dir/src/emu_main.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_main.cpp.obj -MF CMakeFiles/Program.dir/src/emu_main.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_main.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_main.cpp
+CMakeFiles/Program.dir/src/emu_main.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_main.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_main.cpp
+CMakeFiles/Program.dir/src/emu_main.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Program.dir/src/emu_main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_main.cpp.o -MF CMakeFiles/Program.dir/src/emu_main.cpp.o.d -o CMakeFiles/Program.dir/src/emu_main.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_main.cpp"
 
 CMakeFiles/Program.dir/src/emu_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_main.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_main.cpp > CMakeFiles/Program.dir/src/emu_main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_main.cpp" > CMakeFiles/Program.dir/src/emu_main.cpp.i
 
 CMakeFiles/Program.dir/src/emu_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_main.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_main.cpp -o CMakeFiles/Program.dir/src/emu_main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_main.cpp" -o CMakeFiles/Program.dir/src/emu_main.cpp.s
 
-CMakeFiles/Program.dir/src/emu_memory.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_memory.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_memory.cpp
-CMakeFiles/Program.dir/src/emu_memory.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Program.dir/src/emu_memory.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_memory.cpp.obj -MF CMakeFiles/Program.dir/src/emu_memory.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_memory.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_memory.cpp
+CMakeFiles/Program.dir/src/emu_memory.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_memory.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_memory.cpp
+CMakeFiles/Program.dir/src/emu_memory.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Program.dir/src/emu_memory.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_memory.cpp.o -MF CMakeFiles/Program.dir/src/emu_memory.cpp.o.d -o CMakeFiles/Program.dir/src/emu_memory.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_memory.cpp"
 
 CMakeFiles/Program.dir/src/emu_memory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_memory.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_memory.cpp > CMakeFiles/Program.dir/src/emu_memory.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_memory.cpp" > CMakeFiles/Program.dir/src/emu_memory.cpp.i
 
 CMakeFiles/Program.dir/src/emu_memory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_memory.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_memory.cpp -o CMakeFiles/Program.dir/src/emu_memory.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_memory.cpp" -o CMakeFiles/Program.dir/src/emu_memory.cpp.s
 
-CMakeFiles/Program.dir/src/emu_program.cpp.obj: CMakeFiles/Program.dir/flags.make
-CMakeFiles/Program.dir/src/emu_program.cpp.obj: D:/Programming/TinyCPUEmulator/src/emu_program.cpp
-CMakeFiles/Program.dir/src/emu_program.cpp.obj: CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Program.dir/src/emu_program.cpp.obj"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_program.cpp.obj -MF CMakeFiles/Program.dir/src/emu_program.cpp.obj.d -o CMakeFiles/Program.dir/src/emu_program.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_program.cpp
+CMakeFiles/Program.dir/src/emu_program.cpp.o: CMakeFiles/Program.dir/flags.make
+CMakeFiles/Program.dir/src/emu_program.cpp.o: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/src/emu_program.cpp
+CMakeFiles/Program.dir/src/emu_program.cpp.o: CMakeFiles/Program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Program.dir/src/emu_program.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Program.dir/src/emu_program.cpp.o -MF CMakeFiles/Program.dir/src/emu_program.cpp.o.d -o CMakeFiles/Program.dir/src/emu_program.cpp.o -c "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_program.cpp"
 
 CMakeFiles/Program.dir/src/emu_program.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/emu_program.cpp.i"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Programming/TinyCPUEmulator/src/emu_program.cpp > CMakeFiles/Program.dir/src/emu_program.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_program.cpp" > CMakeFiles/Program.dir/src/emu_program.cpp.i
 
 CMakeFiles/Program.dir/src/emu_program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/emu_program.cpp.s"
-	D:/Programs/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Programming/TinyCPUEmulator/src/emu_program.cpp -o CMakeFiles/Program.dir/src/emu_program.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_program.cpp" -o CMakeFiles/Program.dir/src/emu_program.cpp.s
 
 # Object files for target Program
 Program_OBJECTS = \
-"CMakeFiles/Program.dir/src/emu_cpu.cpp.obj" \
-"CMakeFiles/Program.dir/src/emu_decoder.cpp.obj" \
-"CMakeFiles/Program.dir/src/emu_disasm.cpp.obj" \
-"CMakeFiles/Program.dir/src/emu_main.cpp.obj" \
-"CMakeFiles/Program.dir/src/emu_memory.cpp.obj" \
-"CMakeFiles/Program.dir/src/emu_program.cpp.obj"
+"CMakeFiles/Program.dir/src/emu_cpu.cpp.o" \
+"CMakeFiles/Program.dir/src/emu_decoder.cpp.o" \
+"CMakeFiles/Program.dir/src/emu_disasm.cpp.o" \
+"CMakeFiles/Program.dir/src/emu_main.cpp.o" \
+"CMakeFiles/Program.dir/src/emu_memory.cpp.o" \
+"CMakeFiles/Program.dir/src/emu_program.cpp.o"
 
 # External object files for target Program
 Program_EXTERNAL_OBJECTS =
 
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_cpu.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_decoder.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_disasm.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_main.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_memory.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/src/emu_program.cpp.obj
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/build.make
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/linkLibs.rsp
-D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe: CMakeFiles/Program.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe"
-	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/Program.dir/objects.a
-	D:/Programs/msys64/ucrt64/bin/ar.exe qc CMakeFiles/Program.dir/objects.a @CMakeFiles/Program.dir/objects1.rsp
-	D:/Programs/msys64/ucrt64/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/Program.dir/objects.a -Wl,--no-whole-archive -o D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe -Wl,--out-implib,libProgram.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Program.dir/linkLibs.rsp
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_cpu.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_decoder.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_disasm.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_main.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_memory.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/src/emu_program.cpp.o
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/build.make
+/Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program: CMakeFiles/Program.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable \"/Users/Shared/Dev/VS Code/TinyCPUEmulator/bins/Darwin/Program\""
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Program.dir/build: D:/Programming/TinyCPUEmulator/bins/Windows/Program.exe
+CMakeFiles/Program.dir/build: /Users/Shared/Dev/VS\ Code/TinyCPUEmulator/bins/Darwin/Program
 .PHONY : CMakeFiles/Program.dir/build
 
 CMakeFiles/Program.dir/clean:
@@ -191,6 +188,6 @@ CMakeFiles/Program.dir/clean:
 .PHONY : CMakeFiles/Program.dir/clean
 
 CMakeFiles/Program.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" D:/Programming/TinyCPUEmulator D:/Programming/TinyCPUEmulator D:/Programming/TinyCPUEmulator/build D:/Programming/TinyCPUEmulator/build D:/Programming/TinyCPUEmulator/build/CMakeFiles/Program.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/Shared/Dev/VS Code/TinyCPUEmulator" "/Users/Shared/Dev/VS Code/TinyCPUEmulator" "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build" "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build" "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles/Program.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Program.dir/depend
 

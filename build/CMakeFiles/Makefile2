@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Programming/TinyCPUEmulator
+CMAKE_SOURCE_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Programming/TinyCPUEmulator/build
+CMAKE_BINARY_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/Program.dir/clean
 CMakeFiles/Program.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Program"
 .PHONY : CMakeFiles/Program.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Program.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Programming/TinyCPUEmulator/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Program.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Programming/TinyCPUEmulator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" 0
 .PHONY : CMakeFiles/Program.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ Program: CMakeFiles/Program.dir/rule
 # codegen rule for target.
 CMakeFiles/Program.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Programming/TinyCPUEmulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target Program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Finished codegen for target Program"
 .PHONY : CMakeFiles/Program.dir/codegen
 
 # clean rule for target.

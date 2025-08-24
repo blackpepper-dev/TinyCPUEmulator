@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp" "CMakeFiles/Program.dir/src/emu_cpu.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_cpu.cpp.obj.d"
-  "D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp" "CMakeFiles/Program.dir/src/emu_decoder.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_decoder.cpp.obj.d"
-  "D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp" "CMakeFiles/Program.dir/src/emu_disasm.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_disasm.cpp.obj.d"
-  "D:/Programming/TinyCPUEmulator/src/emu_main.cpp" "CMakeFiles/Program.dir/src/emu_main.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_main.cpp.obj.d"
-  "D:/Programming/TinyCPUEmulator/src/emu_memory.cpp" "CMakeFiles/Program.dir/src/emu_memory.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_memory.cpp.obj.d"
-  "D:/Programming/TinyCPUEmulator/src/emu_program.cpp" "CMakeFiles/Program.dir/src/emu_program.cpp.obj" "gcc" "CMakeFiles/Program.dir/src/emu_program.cpp.obj.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_cpu.cpp" "CMakeFiles/Program.dir/src/emu_cpu.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_cpu.cpp.o.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_decoder.cpp" "CMakeFiles/Program.dir/src/emu_decoder.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_decoder.cpp.o.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_disasm.cpp" "CMakeFiles/Program.dir/src/emu_disasm.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_disasm.cpp.o.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_main.cpp" "CMakeFiles/Program.dir/src/emu_main.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_main.cpp.o.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_memory.cpp" "CMakeFiles/Program.dir/src/emu_memory.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_memory.cpp.o.d"
+  "/Users/Shared/Dev/VS Code/TinyCPUEmulator/src/emu_program.cpp" "CMakeFiles/Program.dir/src/emu_program.cpp.o" "gcc" "CMakeFiles/Program.dir/src/emu_program.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

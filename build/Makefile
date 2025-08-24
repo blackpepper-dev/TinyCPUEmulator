@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Programming/TinyCPUEmulator
+CMAKE_SOURCE_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Programming/TinyCPUEmulator/build
+CMAKE_BINARY_DIR = "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = D:/Programming/TinyCPUEmulator/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Programming/TinyCPUEmulator/build/CMakeFiles D:/Programming/TinyCPUEmulator/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Programming/TinyCPUEmulator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Shared/Dev/VS Code/TinyCPUEmulator/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -129,13 +129,13 @@ Program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/build
 .PHONY : Program/fast
 
-src/emu_cpu.obj: src/emu_cpu.cpp.obj
-.PHONY : src/emu_cpu.obj
+src/emu_cpu.o: src/emu_cpu.cpp.o
+.PHONY : src/emu_cpu.o
 
 # target to build an object file
-src/emu_cpu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_cpu.cpp.obj
-.PHONY : src/emu_cpu.cpp.obj
+src/emu_cpu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_cpu.cpp.o
+.PHONY : src/emu_cpu.cpp.o
 
 src/emu_cpu.i: src/emu_cpu.cpp.i
 .PHONY : src/emu_cpu.i
@@ -153,13 +153,13 @@ src/emu_cpu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_cpu.cpp.s
 .PHONY : src/emu_cpu.cpp.s
 
-src/emu_decoder.obj: src/emu_decoder.cpp.obj
-.PHONY : src/emu_decoder.obj
+src/emu_decoder.o: src/emu_decoder.cpp.o
+.PHONY : src/emu_decoder.o
 
 # target to build an object file
-src/emu_decoder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_decoder.cpp.obj
-.PHONY : src/emu_decoder.cpp.obj
+src/emu_decoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_decoder.cpp.o
+.PHONY : src/emu_decoder.cpp.o
 
 src/emu_decoder.i: src/emu_decoder.cpp.i
 .PHONY : src/emu_decoder.i
@@ -177,13 +177,13 @@ src/emu_decoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_decoder.cpp.s
 .PHONY : src/emu_decoder.cpp.s
 
-src/emu_disasm.obj: src/emu_disasm.cpp.obj
-.PHONY : src/emu_disasm.obj
+src/emu_disasm.o: src/emu_disasm.cpp.o
+.PHONY : src/emu_disasm.o
 
 # target to build an object file
-src/emu_disasm.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_disasm.cpp.obj
-.PHONY : src/emu_disasm.cpp.obj
+src/emu_disasm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_disasm.cpp.o
+.PHONY : src/emu_disasm.cpp.o
 
 src/emu_disasm.i: src/emu_disasm.cpp.i
 .PHONY : src/emu_disasm.i
@@ -201,13 +201,13 @@ src/emu_disasm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_disasm.cpp.s
 .PHONY : src/emu_disasm.cpp.s
 
-src/emu_main.obj: src/emu_main.cpp.obj
-.PHONY : src/emu_main.obj
+src/emu_main.o: src/emu_main.cpp.o
+.PHONY : src/emu_main.o
 
 # target to build an object file
-src/emu_main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_main.cpp.obj
-.PHONY : src/emu_main.cpp.obj
+src/emu_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_main.cpp.o
+.PHONY : src/emu_main.cpp.o
 
 src/emu_main.i: src/emu_main.cpp.i
 .PHONY : src/emu_main.i
@@ -225,13 +225,13 @@ src/emu_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_main.cpp.s
 .PHONY : src/emu_main.cpp.s
 
-src/emu_memory.obj: src/emu_memory.cpp.obj
-.PHONY : src/emu_memory.obj
+src/emu_memory.o: src/emu_memory.cpp.o
+.PHONY : src/emu_memory.o
 
 # target to build an object file
-src/emu_memory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_memory.cpp.obj
-.PHONY : src/emu_memory.cpp.obj
+src/emu_memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_memory.cpp.o
+.PHONY : src/emu_memory.cpp.o
 
 src/emu_memory.i: src/emu_memory.cpp.i
 .PHONY : src/emu_memory.i
@@ -249,13 +249,13 @@ src/emu_memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_memory.cpp.s
 .PHONY : src/emu_memory.cpp.s
 
-src/emu_program.obj: src/emu_program.cpp.obj
-.PHONY : src/emu_program.obj
+src/emu_program.o: src/emu_program.cpp.o
+.PHONY : src/emu_program.o
 
 # target to build an object file
-src/emu_program.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_program.cpp.obj
-.PHONY : src/emu_program.cpp.obj
+src/emu_program.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/src/emu_program.cpp.o
+.PHONY : src/emu_program.cpp.o
 
 src/emu_program.i: src/emu_program.cpp.i
 .PHONY : src/emu_program.i
@@ -282,22 +282,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Program"
-	@echo "... src/emu_cpu.obj"
+	@echo "... src/emu_cpu.o"
 	@echo "... src/emu_cpu.i"
 	@echo "... src/emu_cpu.s"
-	@echo "... src/emu_decoder.obj"
+	@echo "... src/emu_decoder.o"
 	@echo "... src/emu_decoder.i"
 	@echo "... src/emu_decoder.s"
-	@echo "... src/emu_disasm.obj"
+	@echo "... src/emu_disasm.o"
 	@echo "... src/emu_disasm.i"
 	@echo "... src/emu_disasm.s"
-	@echo "... src/emu_main.obj"
+	@echo "... src/emu_main.o"
 	@echo "... src/emu_main.i"
 	@echo "... src/emu_main.s"
-	@echo "... src/emu_memory.obj"
+	@echo "... src/emu_memory.o"
 	@echo "... src/emu_memory.i"
 	@echo "... src/emu_memory.s"
-	@echo "... src/emu_program.obj"
+	@echo "... src/emu_program.o"
 	@echo "... src/emu_program.i"
 	@echo "... src/emu_program.s"
 .PHONY : help
