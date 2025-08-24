@@ -30,13 +30,18 @@ jobs:
       run: echo "build_dir=${{ github.workspace }}/build" >> $GITHUB_OUTPUT
       shell: bash
 
+    - name: Clean build directory
+      run: rm -rf ${{ github.workspace }}/build
+      shell: bash
+
     - name: Configure CMake
       run: >
-        cmake -B ${{ steps.vars.outputs.build_dir }}
+        cmake -B ${{ github.workspace }}/build
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_BUILD_TYPE=Release
         -S ${{ github.workspace }}
+
 
     - name: Build
       run: cmake --build ${{ steps.vars.outputs.build_dir }} --config Release
