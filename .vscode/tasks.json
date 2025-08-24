@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Win32",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++11",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-O2",
+                //"${File}",                              
+                "${workspaceFolder}/TinyCPUEmulator/emu_memory.cpp",                
+                "${workspaceFolder}/TinyCPUEmulator/emu_decoder.cpp",    
+                "${workspaceFolder}/TinyCPUEmulator/emu_program.cpp",                               
+                "${workspaceFolder}/TinyCPUEmulator/emu_disasm.cpp",                                               
+                "${workspaceFolder}/TinyCPUEmulator/emu_cpu.cpp",
+                "${workspaceFolder}/TinyCPUEmulator/emu_main.cpp",                
+                "-o", 
+                "${workspaceFolder}/bins/Win32/Program.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile Windows application"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build MacOs",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++11",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-O2",
+                //"${file}",
+                "${workspaceFolder}/TinyCPUEmulator/emu_cpu.cpp",
+                "${workspaceFolder}/TinyCPUEmulator/emu_main.cpp",               
+                "-o", "${workspaceFolder}/bins/MacOs/Program"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile MacOs application"
+        }
+    ]
+}
