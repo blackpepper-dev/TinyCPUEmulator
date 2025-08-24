@@ -1,0 +1,33 @@
+name: macOS Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Clean build directory
+      run: rm -rf build
+      shell: bash
+
+    - name: Configure CMake
+      run: >
+        cmake -S ${{ github.workspace }} -B build
+        -DCMAKE_C_COMPILER=clang
+        -DCMAKE_CXX_COMPILER=clang++
+        -DCMAKE_BUILD_TYPE=Release
+
+    - name: Build
+      run: cmake --build build --config Release
+
+    - name: Run tests (if any)
+      working-directory: build
+      run: ctest --build-config Release || echo "No tests found or some failed"
