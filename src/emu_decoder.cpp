@@ -1,5 +1,5 @@
-#include "emu_decoder.h"
-#include "emu_cpu.h"
+#include "headers/emu_decoder.h"
+#include "headers/emu_cpu.h"
 
 void Emu_Decoder::CommandRow(uint8_t opcode, uint8_t reg, uint8_t operand)
 {
