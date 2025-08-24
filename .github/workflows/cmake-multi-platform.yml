@@ -25,18 +25,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up build directory
-      id: vars
-      run: echo "build_dir=${{ github.workspace }}/build" >> $GITHUB_OUTPUT
-      shell: bash
-
     - name: Clean build directory
-      run: rm -rf ${{ github.workspace }}/build
+      run: rm -rf build
       shell: bash
 
     - name: Configure CMake
       run: >
-        cmake -S . -B build
+        cmake -S ${{ github.workspace }} -B build
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_BUILD_TYPE=Release
@@ -47,4 +42,3 @@ jobs:
     - name: Run tests (if any)
       working-directory: build
       run: ctest --build-config Release || echo "No tests found or some failed"
-
