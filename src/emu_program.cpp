@@ -1,5 +1,5 @@
-#include "headers/emu_program.h"
-#include "headers/emu_cpu.h"
+#include "include/emu_program.h"
+#include "include/emu_cpu.h"
 
 
 void LoadProgram(Emu_Program* instruction,size_t prog_size)
