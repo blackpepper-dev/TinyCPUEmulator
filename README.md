@@ -1,3 +1,7 @@
+![Windows Build](https://github.com/blackpepper-dev/TINYCPEMULATOR/actions/workflows/windows-build.yml/badge.svg)
+![macOS Build](https://github.com/blackpepper-dev/TINYCPEMULATOR/actions/workflows/macos-build.yml/badge.svg)
+
+
 # 📘 Virtual 8-bit CPU — Архитектура, ISA и Модули
 
 **Имя проекта:** TinyCPUemulator  
