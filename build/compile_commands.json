@@ -1,0 +1,38 @@
+[
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_cpu.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_cpu.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_cpu.cpp.obj"
+},
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_decoder.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_decoder.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_decoder.cpp.obj"
+},
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_disasm.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_disasm.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_disasm.cpp.obj"
+},
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_main.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_main.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_main.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_main.cpp.obj"
+},
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_memory.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_memory.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_memory.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_memory.cpp.obj"
+},
+{
+  "directory": "D:/Programming/TinyCPUEmulator/build",
+  "command": "D:/Programs/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Program.dir/src/emu_program.cpp.obj -c D:/Programming/TinyCPUEmulator/src/emu_program.cpp",
+  "file": "D:/Programming/TinyCPUEmulator/src/emu_program.cpp",
+  "output": "CMakeFiles/Program.dir/src/emu_program.cpp.obj"
+}
+]

@@ -1,31 +1,32 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "(Win32) Compile & Run",
-            "type": "cppdbg",
-            "request": "launch",
-            "preLaunchTask": "Build Win32",
-            "program": "${workspaceFolder}/bins/Win32/Program.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "gdb"
-        },
-        {
-            "name": "(MacOs) Compile & Run",
-            "type": "cppdbg",
-            "request": "launch",
-            "preLaunchTask": "Build MacOs",
-            "program": "${workspaceFolder}/bins/MacOs/Program",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "lldb"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run TinyCPUEmulator",
+      "type": "cppdbg",
+      "request": "launch",
+      "preLaunchTask": "CMake Build",
+      "program": "${workspaceFolder}/bins/Windows/Program.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "D:/Programs/msys64/ucrt64/bin/gdb.exe"
+    },
+
+    {
+      "name": "Run TinyCPUEmulator (macOS)",
+      "type": "cppdbg",
+      "request": "launch",
+      "preLaunchTask": "CMake Build",
+      "program": "${workspaceFolder}/bins/Darwin/Program",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": true,
+      "MIMode": "lldb"
+    }
+
+  ]
 }

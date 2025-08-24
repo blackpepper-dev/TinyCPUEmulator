@@ -1,7 +1,7 @@
 #include <iostream>
-#include "headers/emu_program.h"
-#include "headers/emu_disasm.h"
-#include "headers/emu_cpu.h"
+#include "include/emu_program.h"
+#include "include/emu_disasm.h"
+#include "include/emu_cpu.h"
 
 
 int main()

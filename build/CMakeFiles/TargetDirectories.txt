@@ -1,0 +1,3 @@
+D:/Programming/TinyCPUEmulator/build/CMakeFiles/Program.dir
+D:/Programming/TinyCPUEmulator/build/CMakeFiles/edit_cache.dir
+D:/Programming/TinyCPUEmulator/build/CMakeFiles/rebuild_cache.dir
