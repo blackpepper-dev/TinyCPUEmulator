@@ -10,7 +10,7 @@ int main()
     {
         {MVI, A, 10},
         {MVI, B, 20},
-        {JMP, 13}, // jump to row #13
+        {JMP, 12}, // jump to row #12
         {ADD, A, B},
         {ADD, B, A},
         {DVI, A, 2},
