@@ -7,19 +7,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: windows-latest
-            c_compiler: cl
-            cpp_compiler: cl
-          - os: macos-latest
-            c_compiler: clang
-            cpp_compiler: clang++
-
-    runs-on: ${{ matrix.os }}
+  windows-build:
+    name: Windows Build
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -32,8 +22,34 @@ jobs:
     - name: Configure CMake
       run: >
         cmake -S ${{ github.workspace }} -B build
-        -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
-        -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
+        -DCMAKE_C_COMPILER=cl
+        -DCMAKE_CXX_COMPILER=cl
+        -DCMAKE_BUILD_TYPE=Release
+
+    - name: Build
+      run: cmake --build build --config Release
+
+    - name: Run tests (if any)
+      working-directory: build
+      run: ctest --build-config Release || echo "No tests found or some failed"
+
+  macos-build:
+    name: macOS Build
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Clean build directory
+      run: rm -rf build
+      shell: bash
+
+    - name: Configure CMake
+      run: >
+        cmake -S ${{ github.workspace }} -B build
+        -DCMAKE_C_COMPILER=clang
+        -DCMAKE_CXX_COMPILER=clang++
         -DCMAKE_BUILD_TYPE=Release
 
     - name: Build

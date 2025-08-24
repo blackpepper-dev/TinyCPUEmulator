@@ -1,5 +1,5 @@
-![Build](https://github.com/blackpepper-dev/TinyCPUEmulator/actions/workflows/cmake-multi-platform.yml/badge.svg)
-
+![Windows Build](https://github.com/blackpepper-dev/TinyCPUEmulator/actions/workflows/cmake-multi-platform.yml/badge.svg?branch=main&event=push&job=windows-build)
+![macOS Build](https://github.com/blackpepper-dev/TinyCPUEmulator/actions/workflows/cmake-multi-platform.yml/badge.svg?branch=main&event=push&job=macos-build)
 
 
 # 📘 Virtual 8-bit CPU — Архитектура, ISA и Модули
