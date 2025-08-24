@@ -1,4 +1,4 @@
-![Build](https://github.com/blackpepper-dev/TINYCPEMULATOR/actions/workflows/cmake-multi-platform.yml/badge.svg)
+![Build](https://github.com/blackpepper-dev/TinyCPUEmulator/actions/workflows/cmake-multi-platform.yml/badge.svg)
 
 
 
