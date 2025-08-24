@@ -18,7 +18,7 @@
 | emu_cpu     | EmuCPU               | Регистры, ALU, исполнение              |
 | emu_mem     | Memory               | Оперативная память, CS/DS доступ       |
 | emu_decode  | InstructionDecoder   | Декодирование инструкций               |
-| emu_loader  | InstructionLoader    | Загрузка команд в декодер              |
+| emu_program | InstructionLoader    | Загрузка команд в декодер              |
 | emu_enums   | Opcodes, Registers   | Константы и идентификаторы             |
 | emu_main    | main()               | Сборка и запуск эмуляции               |
 | emu_spec    | —                    | Спецификация ISA и архитектуры         |
