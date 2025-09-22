@@ -18,14 +18,17 @@ void Emu_Loader::LoadSource(const std::string filename)
         return;
     }
 
-    NormStr(srcData);
+   
 }
   
 
 
-Emu_Program *Emu_Loader::Parse(const std::string source)
+Emu_Program *Emu_Loader::Parse(std::string source)
 {
-    std::replace(source.begin(), source.end(), ' ', '\n');
-    std::cout << source;
-    return nullptr;
+    
+    Emu_Program *program = new Emu_Program(source.size());
+
+    std::replace(source.begin(), source.end(), ' ', '\n');  
+    
+    
 }

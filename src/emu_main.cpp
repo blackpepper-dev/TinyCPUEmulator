@@ -1,11 +1,8 @@
 #include <iostream>
+#include "include/emu_loader.h"
 #include "include/emu_program.h"
 #include "include/emu_disasm.h"
 #include "include/emu_cpu.h"
-
-#include "include/emu_loader.h"
-
-
 
 
 
@@ -51,7 +48,8 @@ int main()
     _cpu.DUMP_CPU();
 
 
-    Emu_Loader::LoadSource("1.txt");
+    Emu_Loader loader;
+    loader.LoadSource("1.txt");
 
     std::cin.get();
 
