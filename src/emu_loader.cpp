@@ -19,8 +19,7 @@ void Emu_Loader::LoadSource(const std::string filename)
     }
 
    
-}
-  
+} 
 
 
 Emu_Program* Emu_Loader::Parse(std::string source)
@@ -30,5 +29,5 @@ Emu_Program* Emu_Loader::Parse(std::string source)
 
     std::replace(source.begin(), source.end(), ' ', '\n');  
     
-    
+    return program;
 }

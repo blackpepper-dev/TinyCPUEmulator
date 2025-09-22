@@ -5,9 +5,8 @@
 #include <string>
 #include <algorithm>
 
-#include "emu_enums.h"
 #include "emu_program.h"
-#include "emu_memory.h"
+
 
 struct Emu_Program;
 
