@@ -23,7 +23,7 @@ void Emu_Loader::LoadSource(const std::string filename)
   
 
 
-Emu_Program *Emu_Loader::Parse(std::string source)
+Emu_Program* Emu_Loader::Parse(std::string source)
 {
     
     Emu_Program *program = new Emu_Program(source.size());
