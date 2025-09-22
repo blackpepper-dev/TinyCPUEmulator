@@ -3,6 +3,11 @@
 #include "include/emu_disasm.h"
 #include "include/emu_cpu.h"
 
+#include "include/emu_loader.h"
+
+
+
+
 
 int main()
 {
@@ -44,6 +49,9 @@ int main()
     _cpu.Execute();    
     
     _cpu.DUMP_CPU();
+
+
+    Emu_Loader::LoadSource("1.txt");
 
     std::cin.get();
 

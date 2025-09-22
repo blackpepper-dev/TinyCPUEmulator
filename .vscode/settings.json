@@ -73,6 +73,8 @@
         "ratio": "cpp",
         "sstream": "cpp",
         "stack": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "chrono": "cpp",
+        "fstream": "cpp"
     }
 }

@@ -1,0 +1,6 @@
+MOV A 2
+MOV B 3
+ADD A B
+SAV A 1
+OUT 1
+HLT
