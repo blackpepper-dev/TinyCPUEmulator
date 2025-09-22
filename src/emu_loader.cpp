@@ -10,7 +10,11 @@ void Emu_Loader::LoadSource(const std::string filename)
     if(srcFile.is_open())
     {
         while(std::getline(srcFile,line))
+        {
             srcData += line + '\n';
+            std::cout << line << '\n';
+
+        }
     }
     else
     {
