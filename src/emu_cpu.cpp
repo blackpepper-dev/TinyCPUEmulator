@@ -43,8 +43,8 @@ uint8_t Emu_CPU::GetRegisterValue(uint8_t reg)
         case _registrs::C: return C;
         case _registrs::D: return D;
         default:
-            Logger.LogError("Unknown register reference!!!");
-            throw std::invalid_argument("Invalid register reference");
+            Logger.LogError("Invalid register reference in Emu_CPU::GetRegisterValue");
+            throw std::invalid_argument("Invalid register reference in Emu_CPU::GetRegisterValue");
 
     }
 }
@@ -56,8 +56,8 @@ uint8_t& Emu_CPU::GetRegisterRef(uint8_t reg_id) {
         case _registrs::C: return C;
         case _registrs::D: return D;
         default:
-            Logger.LogError("Unknown register reference!!!");
-            throw std::invalid_argument("Invalid register reference");
+            Logger.LogError("Invalid register reference in Emu_CPU::GetRegisterRef");
+            throw std::invalid_argument("Invalid register reference in Emu_CPU::GetRegisterRef");
     }
 
 }

@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <cstdint>
+#include "Logger.h"
 
 struct Emu_Memory
 {
