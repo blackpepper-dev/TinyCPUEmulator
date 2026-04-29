@@ -17,7 +17,7 @@ int main()
 
     Emu_Program ops[] = 
     {
-        {MVI, A, 10},
+        {MVI, A, 20},
         {MVI, B, 20},
         {JMP, 12}, // jump to row #12
         {ADD, A, B},
