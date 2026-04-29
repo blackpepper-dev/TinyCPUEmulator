@@ -18,7 +18,7 @@ void Emu_CPU::ALU_OP(uint8_t &regref, uint8_t op, uint8_t value)
             if(value == 0) 
             {
                 Logger.LogError("Error: divison by zero!!!");
-                return;
+                throw std::domain_error("Division by zero in Emu_CPU::ALU_OP");
             }
 
             res = regref / value;
