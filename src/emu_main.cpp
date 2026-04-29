@@ -3,11 +3,18 @@
 #include "include/emu_program.h"
 #include "include/emu_disasm.h"
 #include "include/emu_cpu.h"
+#include "include/Logger.h"
+
 
 
 
 int main()
 {
+    
+    //Logger.LogToConsole = true;
+    Logger.LogToFile = true;    
+    Logger.Init();
+
     Emu_Program ops[] = 
     {
         {MVI, A, 10},
@@ -25,10 +32,10 @@ int main()
         {SAV, B, 1}, //#13
         {SAV, C, 2},
         {SAV, D, 3},
-        {OUT, 0},
-        {OUT, 1},
-        {OUT, 2},
-        {OUT, 3},
+        {PRN, 0},
+        {PRN, 1},
+        {PRN, 2},
+        {PRN, 3},
         {HLT}
     };
 
@@ -37,14 +44,13 @@ int main()
     LoadProgram(ops, sizeof(ops) / sizeof(Emu_Program));
 
     
-    std::cout << "=== Program Disassembly ===\n";
+    Logger.LogInfo("=== Program Disassembly ===");
     for (size_t i = 0; i < sizeof(ops) / sizeof(Emu_Program); ++i)
     {
-        std::cout << Emu_Disasm::Format(ops[i], i) << std::endl;
+        Logger.LogInfo(Emu_Disasm::Format(ops[i], i));
     }
 
     _cpu.Execute();    
-    
     _cpu.DUMP_CPU();
 
 

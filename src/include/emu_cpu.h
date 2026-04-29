@@ -11,6 +11,7 @@
 #include "emu_enums.h"
 #include "emu_memory.h"
 #include "emu_decoder.h"
+#include "Logger.h"
 
 
 /*========================================================================*/

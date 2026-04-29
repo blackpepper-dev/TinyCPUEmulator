@@ -14,7 +14,7 @@ enum _opcodes : uint8_t
     DVI   = 0x09, //Register / literal
     DIV   = 0xA, //Register / register
     SAV   = 0xB, // Save in memory DS(0x200) + literal -> 0x??  
-    OUT   = 0xC, // Output from memory DS(0x200) + literal - > res
+    PRN   = 0xC, // Output from memory DS(0x200) + literal - > res
     CMP   = 0xD, // Compare A & literal
     JMP   = 0xF, // Jump to _cpu.memory[_cpu.CS + literal] (go to)
     HLT   = 0xFF //Halt execution

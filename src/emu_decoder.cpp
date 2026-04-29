@@ -120,9 +120,9 @@ void Emu_Decoder::Decode(Emu_CPU& cpu)
          break;
     }
 
-    case OUT:
+    case PRN:
     {
-         std::cout << "OUT:" << (int)cpu.Memory.Read(cpu.Memory.DS + operand2) << std::endl;
+         std::cout << "PRN:" << (int)cpu.Memory.Read(cpu.Memory.DS + operand2) << std::endl;
          cpu.PC += 3;
          break;
     }

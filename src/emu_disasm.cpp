@@ -29,7 +29,7 @@ std::string Emu_Disasm::Format(const Emu_Program& instr, size_t index)
         case SAV: oss << " " << RegToStr(instr.operand1) << ", [" << static_cast<int>(instr.operand2) << "]";
             break;
 
-        case OUT: oss << " [" << static_cast<int>(instr.operand1) << "]";
+        case PRN: oss << " [" << static_cast<int>(instr.operand1) << "]";
             break;
 
         case JMP: oss << " -> " << static_cast<int>(instr.operand1);
@@ -65,7 +65,7 @@ std::string Emu_Disasm::OpcodeToStr(uint8_t opcode)
         case DVI: return "DVI";
         case DIV: return "DIV";
         case SAV: return "SAV";
-        case OUT: return "OUT";
+        case PRN: return "PRN";
         case CMP: return "CMP";
         case JMP: return "JMP";
         case HLT: return "HLT";

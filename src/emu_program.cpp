@@ -13,7 +13,7 @@ void LoadProgram(Emu_Program* instruction,size_t prog_size)
                 _cpu.Decoder.CommandRow(instruction[i].opcode);
                 break;
 
-            case OUT:
+            case PRN:
             case JMP:
                 _cpu.Decoder.CommandRow(instruction[i].opcode,instruction[i].operand1);
                 break;
