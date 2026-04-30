@@ -66,49 +66,49 @@ void Emu_Decoder::Decode(Emu_CPU& cpu)
 
     case ADD:
     {
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_ADD,cpu.GetRegisterValue(operand2)); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_ADD,cpu.GetRegisterValue(operand2)); 
         cpu.PC += 3;    
         break;
     }
 
     case SUI:
     { 
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_SUB,operand2); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_SUB,operand2);
         cpu.PC += 3;    
         break;
     }
 
     case SUB:
     {
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_SUB,cpu.GetRegisterValue(operand2)); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_SUB,cpu.GetRegisterValue(operand2));
         cpu.PC += 3;    
         break;
     }
 
     case MLI:
     { 
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_MUL,operand2); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_MUL,operand2);
         cpu.PC += 3;    
         break;     
     }
 
     case MUL:
     {
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_MUL,cpu.GetRegisterValue(operand2)); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_MUL,cpu.GetRegisterValue(operand2));
         cpu.PC += 3;    
         break;
     }
 
     case DVI:
     {
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_DIV,operand2); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_DIV,operand2);
         cpu.PC += 3;    
         break;
     }
 
     case DIV:
     {
-        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_DIV,cpu.GetRegisterValue(operand2)); break;            
+        cpu.ALU_OP(cpu.GetRegisterRef(operand1),ALU_OP_DIV,cpu.GetRegisterValue(operand2));
         cpu.PC += 3;    
         break;
     }
@@ -122,7 +122,7 @@ void Emu_Decoder::Decode(Emu_CPU& cpu)
 
     case PRN:
     {
-         std::cout << "PRN:" << (int)cpu.Memory.Read(cpu.Memory.DS + operand2) << std::endl;
+         std::cout << (int)cpu.Memory.Read(cpu.Memory.DS + operand2) << std::endl;
          cpu.PC += 3;
          break;
     }

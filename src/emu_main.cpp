@@ -6,15 +6,6 @@
 #include "include/Logger.h"
 
 
-
-
-int main()
-{
-    
-    //Logger.LogToConsole = true;
-    Logger.LogToFile = true;    
-    Logger.Init();
-
     Emu_Program ops[] = 
     {
         {MVI, A, 20},
@@ -39,23 +30,22 @@ int main()
         {HLT}
     };
 
-    _cpu.InitCPU();    
 
-    LoadProgram(ops, sizeof(ops) / sizeof(Emu_Program));
-
+int main()
+{    
     
-    Logger.LogInfo("=== Program Disassembly ===");
-    for (size_t i = 0; i < sizeof(ops) / sizeof(Emu_Program); ++i)
-    {
-        Logger.LogInfo(Emu_Disasm::Format(ops[i], i));
-    }
+    Logger.LogToFile = true;    
+    Logger.Init();
 
-    _cpu.Execute();    
-    _cpu.DUMP_CPU();
-
+    _cpu.InitCPU();
 
     Emu_Loader loader;
     loader.LoadSource("1.txt");
+    size_t progSize = 0;
+    Emu_Program* prog = loader.Parse(loader.srcData,progSize);
+    LoadProgram(prog,progSize);
+
+    _cpu.Execute();    
 
     std::cin.get();
 

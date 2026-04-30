@@ -19,9 +19,10 @@ struct Emu_Program
     uint8_t operand1 = 0x00;
     uint8_t operand2 = 0x00;
 
+    Emu_Program() : opcode(0x00), operand1(0x00), operand2(0x00) {}
     Emu_Program(uint8_t op, uint8_t op1 = 0x00, uint8_t op2 = 0x00): opcode(op), operand1(op1), operand2(op2) {}
+    
 
 };
+    void LoadProgram(Emu_Program* instruction,size_t prog_size);
 
-
-void LoadProgram(Emu_Program* instruction,size_t prog_size);
