@@ -79,13 +79,15 @@
 ## 🧪 Пример программы
 
 ```asm
-MVI A, 10  
-MVI B, 10  
-CMP A, B      ; → SR.Zero = 1  
-JZ 0x20       ; → переход, если равны  
-MVI C, 1  
-PRN 1  
-HLT  
+.data
+ A = 2
+ B = 3
+
+.code
+ ADD A B
+ SAV A 0
+ PRN 0
+ HLT 
 ```
 
 ---
