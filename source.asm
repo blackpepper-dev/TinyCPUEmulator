@@ -1,13 +1,9 @@
 .data
-
- A = 10
- B = 10
+ A = 2
+ B = 3
 
 .code
-
  ADD A B
  SAV A 0
- SAV B 1
  PRN 0
- PRN 1
  HLT
