@@ -1,9 +1,17 @@
-.data
- A = 2
- B = 3
+.data 
+ A = 5
+ B = 5
+ C = 2
+ D = 2
+ 
 
-.code
+.code 
+
  ADD A B
+ ADD C D 
+ ADD A C 
  SAV A 0
  PRN 0
  HLT
+
+
