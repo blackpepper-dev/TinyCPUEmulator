@@ -23,9 +23,6 @@ int main()
     _cpu.Execute();    
 
     std::cin.get();
-    
-    //test changes
-    //Test 01
-    
+
     return 0;
 }
