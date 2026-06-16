@@ -4,5 +4,7 @@
 
 int some()
 {
-    null;
+
+    
+ return 0;
 }
