@@ -13,3 +13,12 @@ void newFunc()
 {
     
 }
+
+void newFunc2()
+{
+
+
+
+
+    
+}
